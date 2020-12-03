@@ -1,0 +1,22 @@
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.DialogController"
+            prefHeight="100.0" prefWidth="400.0">
+  <headerText>
+      Add Contact Details
+  </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="name : " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="Dname" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="phone no : " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField  fx:id="Dphoneno" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="E-mail : " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField  fx:id="Demail" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
